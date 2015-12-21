@@ -192,4 +192,4 @@ public class SayHelloConsumer {
 
 ### 联系方式
 
-可以提 Issues 或是联系我的邮箱：`i@scienjus.com`
+可以提 Issues 或是通过邮件联系我：`i@scienjus.com`
