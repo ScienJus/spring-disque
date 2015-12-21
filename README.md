@@ -190,6 +190,6 @@ public class SayHelloConsumer {
 - [ ] 任务参数
 - [ ] 监控页面
 
-### 帮助
+### 联系方式
 
-联系方式：xie_enlong@foxmail.com
+可以提 Issues 或是联系我的邮箱：`i@scienjus.com`
