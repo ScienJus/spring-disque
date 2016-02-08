@@ -20,17 +20,27 @@
 
 **创建项目**
 
-由于这个库还没有提交到Maven的中央仓库，所以需要手动将其导入到你的私人仓库中。首先`fork`源码到本地后使用`mvn package`打包。
-
-然后添加到本地仓库：
+仓库：
 
 ```
-mvn install:install-file  
--DgroupId=com.scienjus
--DartifactId=spring-disque
--Dversion=1.0-SNAPSHOT
--Dpackaging=jar  
--Dfile=/path/to/jar/spring-disque.jar
+<repository>
+    <id>scienjus-mvn-repo</id>
+    <url>https://raw.github.com/ScienJus/maven/mvn-repo/</url>
+    <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+    </snapshots>
+</repository>
+```
+
+依赖：
+
+```
+<dependency>
+    <groupId>com.scienjus</groupId>
+    <artifactId>spring-disque</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
 ```
 
 所有依赖 Jar：
